@@ -5,8 +5,7 @@ def BiggestOneRecursion(x):
         temp=x[0]
         if(temp>Biggest):
             Biggest=temp
-        x.pop(0)
-        BiggestOneRecursion(x)
+        BiggestOneRecursion(x[1:])
     return Biggest
 
 array = [4,5,243,43,555]
